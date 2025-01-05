@@ -217,7 +217,7 @@ impl UrlCleaner {
     /// Text outside of URLs is left unchanged.
     ///
     /// # Errors
-    /// Alls errors encountered are returned in a [`Vec`][alloc::vec::Vec].
+    /// Alls errors encountered are returned in a [`Vec`].
     #[cfg(feature = "linkify")]
     pub fn clear_text<'a>(&self, s: &'a str) -> Result<Cow<'a, str>, alloc::vec::Vec<Error>> {
         self.clear_text_with_linkfinder(s, &linkify::LinkFinder::new())
@@ -236,7 +236,7 @@ impl UrlCleaner {
     /// Text outside of URLs is left unchanged.
     ///
     /// # Errors
-    /// Alls errors encountered are returned in a [`Vec`][alloc::vec::Vec].
+    /// Alls errors encountered are returned in a [`Vec`].
     #[cfg(feature = "linkify")]
     pub fn clear_text_with_linkfinder<'a>(
         &self,
