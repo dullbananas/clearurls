@@ -17,6 +17,7 @@
 #![warn(unused)]
 #![warn(unused_extern_crates)]
 #![warn(unused_import_braces)]
+#![allow(rust_2024_compatibility)]
 // Clippy categories
 #![warn(clippy::cargo)]
 #![warn(clippy::complexity)]
